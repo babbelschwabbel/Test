@@ -1,5 +1,5 @@
 
-// test kommentarda s
+
 #include <Arduino.h>
 
 #define LED 2
