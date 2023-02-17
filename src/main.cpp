@@ -6,6 +6,8 @@
 #include <Arduino.h>
 
 #define LED 2
+#define LED2 16
+#define wait_time 1000
 
 void setup() {
   // put your setup code here, to run once:
@@ -16,9 +18,11 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   digitalWrite(LED, HIGH);
+  digitalWrite(LED2, HIGH);
   Serial.println("LED is on");
-  delay(1000);
+  delay(wait_time);
   digitalWrite(LED, LOW);
+  digitalWrite(LED2, LOW);
   Serial.println("LED is off");
-  delay(1000);
+  delay(wait_time);
 }
